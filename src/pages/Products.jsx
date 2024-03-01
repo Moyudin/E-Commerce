@@ -5,7 +5,7 @@ import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { CiStar } from "react-icons/ci";
 
 const Products = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -21,6 +21,8 @@ const Products = () => {
 
     fetchData();
   }, [id]);
+
+ 
 
   return (
     <>
@@ -49,7 +51,7 @@ const Products = () => {
             <Col lg={{ span: 2, offset: 1 }}>
               <Card>
                 <Row className="mt-3 mx-3">
-                  <Col lg={{ span: 5, offset: 1 }}>Price :</Col>
+                  <Col lg={5}>Price :</Col>
                   <Col>₹ {data.price}</Col>
                 </Row>
                 <hr />
