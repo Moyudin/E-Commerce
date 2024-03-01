@@ -1,3 +1,11 @@
+.text-title{
+  font-size: 120%;
+}
+@media screen and (min-width:768px) and (max-width:1098px) {
+  .text-title{
+    font-size: 12px;
+  }
+}
 @media screen and (min-width:991px) {
   .input-s{
     width: 75%;

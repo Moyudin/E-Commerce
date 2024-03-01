@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
-import { CiStar } from "react-icons/ci";
+import { CiStar } from "react-icons/ci"; 
 
 const Products = () => {
   const [data, setData] = useState([]);

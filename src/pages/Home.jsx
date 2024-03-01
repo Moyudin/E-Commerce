@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 import { CiStar } from "react-icons/ci";
+import "../App.css"
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -27,7 +28,7 @@ const Home = () => {
         <Container>
           <Row>
             {data.map((item) => (
-              <Col key={item.id} md={3} className="mb-4">
+              <Col key={item.id} md={3} className="mb-4 ">
                 <Link
                   to={`/Products/${item.id}`}
                   className="text-decoration-none"
@@ -43,7 +44,7 @@ const Home = () => {
                       src={item.image}
                     />
                     <Card.Body>
-                      <Card.Title className="fs-5">{item.title}</Card.Title>
+                      <Card.Title className="text-title">{item.title}</Card.Title>
                       <Card.Text>₹ {item.price}</Card.Text>
                       <CiStar />
                       <CiStar />
